@@ -51,7 +51,7 @@ const KittenThree =  `<li class="card">
 </li>`;
 const kittenImagen = 'https://dev.adalab.es/maine-coon-cat.webp';
 const kittenName = 'Cielo';
-const kittenDesc = 'Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha' + 'convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta. '
+const kittenDesc = 'Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha' + 'convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta.';
 const kittenRace = 'Maine Coon';
 
 ListSection.innerHTML = ListSection.innerHTML + kittentOne; 
