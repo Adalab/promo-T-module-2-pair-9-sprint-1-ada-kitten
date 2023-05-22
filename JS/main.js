@@ -53,7 +53,11 @@ const KittenThree =  `<li class="card">
 </li>`;
 
 
-ListSection.innerHTML = ListSection.innerHTML + kittenOne; 
-ListSection.innerHTML = ListSection.innerHTML + kittenTwo;
-ListSection.innerHTML = ListSection.innerHTML + KittenThree; 
+ListSection.innerHTML = ListSection.innerHTML + kittenOne + kittenTwo  + KittenThree; 
+//ListSection.innerHTML = ListSection.innerHTML + kittenTwo;
+//ListSection.innerHTML = ListSection.innerHTML + KittenThree; 
+
+const input_search_desc = document.querySelector('.js_in_search_desc');
+const descrSearchText = input_search_desc.value;
+
 
