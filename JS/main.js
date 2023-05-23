@@ -61,3 +61,15 @@ const input_search_desc = document.querySelector('.js_in_search_desc');
 const descrSearchText = input_search_desc.value;
 
 
+//ejercicio clase
+
+/*const imgKitten1 = document.querySelector('.jsimgkitten1');
+imgKitten1.addEventListener('click', (event) => {
+  
+  console.log(event.target);
+  console.log(imgKitten1);
+
+  imgKitten1.classList.toggle('selected');
+
+});
+*/
