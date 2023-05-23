@@ -62,14 +62,18 @@ const descrSearchText = input_search_desc.value;
 
 
 //ejercicio clase
-
+//const sextion =  document.querySelector('js__section');
 /*const imgKitten1 = document.querySelector('.jsimgkitten1');
-imgKitten1.addEventListener('click', (event) => {
-  
+section / imgKitten1.addEventListener('click', (event) => {
+
   console.log(event.target);
+   console.log(event.currentTarget);
   console.log(imgKitten1);
 
   imgKitten1.classList.toggle('selected');
+  event.targe.classList.toggle('selected');
 
+if (event.target !== event.currentTarge) 
+event.target.classList.toggle('selected);
 });
 */
