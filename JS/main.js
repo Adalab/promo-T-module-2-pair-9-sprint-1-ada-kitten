@@ -60,6 +60,24 @@ ListSection.innerHTML = ListSection.innerHTML + kittenOne + kittenTwo  + KittenT
 const input_search_desc = document.querySelector('.js_in_search_desc');
 const descrSearchText = input_search_desc.value;
 
+if(kittenDescOne.includes(descrSearchText) ) {
+  ListSection.innerHTML = kittenOne
+  }
+  
+ if(kittenDescTwo.includes(descrSearchText) ) {
+  ListSection.innerHTML += kittenTwo
+  }
+  
+  if(kittenDescThreee.includes(descrSearchText) ) {
+    ListSection.innerHTML += kittenThree
+  }
+    
+  let html = '';
+  if (kittenRace1 === "")) {
+    html = `Uy que despiste, no sabemos su raza`;
+  } else {
+    html = race;
+  }
 
 //ejercicio clase
 //const sextion =  document.querySelector('js__section');
