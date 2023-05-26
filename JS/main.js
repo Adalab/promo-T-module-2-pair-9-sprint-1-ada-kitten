@@ -80,27 +80,9 @@ ListSection.innerHTML = ListSection.innerHTML + kittenOne + kittenTwo + KittenTh
 const input_search_desc = document.querySelector(".js_in_search_desc");
 const descrSearchText = input_search_desc.value;
 
-<<<<<<< HEAD
-if(kittenDescOne.includes(descrSearchText) ) {
-  ListSection.innerHTML = kittenOne
-  }
-  
- if(kittenDescTwo.includes(descrSearchText) ) {
-  ListSection.innerHTML += kittenTwo
-  }
-  
-  if(kittenDescThree.includes(descrSearchText) ) {
-    ListSection.innerHTML += KittenThree
-  }
-    /*ejercicio de eventos, 2.4*/
-  const buttonForm = document.querySelector(".js-btn-add");
-  const buttonCancel = document.querySelector(".js-btn-cancel");
-  
-=======
 if (kittenDescOne.includes(descrSearchText)) {
   ListSection.innerHTML = kittenOne;
 }
->>>>>>> 3d0068359f2d6d257be01fa979b540e811bb2b1b
 
 if (kittenDescTwo.includes(descrSearchText)) {
   ListSection.innerHTML += kittenTwo;
