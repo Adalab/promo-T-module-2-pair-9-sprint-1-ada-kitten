@@ -143,12 +143,12 @@ buttonForm.addEventListener("click", (event) => {
   }
 });
 
-//buttonCancel.addEventListener("click", handleClickNewCatForm); simplifica el codigo que ya tenemos
-buttonCancel.addEventListener("click", (event) => {
+function handleClickCancel(event) {
   event.preventDefault();
   inputDesc.value = "";
   inputPhoto.value = "";
   inputName.value = "";
-  // hideNewCatForm(); //FUNCION
-  newForm.classList.toggle("collapsed");
-});
+  hideNewCatForm();
+}
+
+buttonCancel.addEventListener("click", handleClickCancel);
