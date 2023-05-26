@@ -91,7 +91,7 @@ if(kittenDescOne.includes(descrSearchText) ) {
   if(kittenDescThree.includes(descrSearchText) ) {
     ListSection.innerHTML += KittenThree
   }
-    
+    /*ejercicio de eventos, 2.4*/
   const buttonForm = document.querySelector(".js-btn-add");
   const buttonCancel = document.querySelector(".js-btn-cancel");
   
