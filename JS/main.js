@@ -97,6 +97,7 @@ const buttonCancel = document.querySelector(".js-btn-cancel");
 const inputDesc = document.querySelector(".js-input-desc");
 const inputPhoto = document.querySelector(".js-input-photo");
 const inputName = document.querySelector(".js-input-name");
+const inputRace = document.querySelector(".js-input-race");
 const labelMessageError = document.querySelector(".js-label-error");
 const newForm = document.querySelector(".js-new-form"); //elemto da sextion new-form
 const buttonNewAdd = document.querySelector(".js-add");
@@ -135,8 +136,9 @@ buttonForm.addEventListener("click", (event) => {
   const valueDesc = inputDesc.value;
   const valuePhoto = inputPhoto.value;
   const valueName = inputName.value;
+  const valueRace = inputName. value;
 
-  if (valueDesc === "" || valuePhoto === "" || valueName === "") {
+  if (valueDesc === "" || valuePhoto === "" || valueName === "" || valueRace === "" ) {
     labelMessageError.innerHTML = "¡Uy! parece que has olvidado algo";
   } else {
     labelMessageError.innerHTML = "";
@@ -148,7 +150,12 @@ function handleClickCancel(event) {
   inputDesc.value = "";
   inputPhoto.value = "";
   inputName.value = "";
+  inputRace.value = "";
   hideNewCatForm();
 }
 
 buttonCancel.addEventListener("click", handleClickCancel);
+
+function renderKitten(url, desc, name, race) {
+  //completa el código
+}
