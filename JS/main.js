@@ -65,6 +65,8 @@ ListSection.innerHTML = ListSection.innerHTML + kittenOne + kittenTwo + KittenTh
 //ListSection.innerHTML = ListSection.innerHTML + kittenTwo;
 //ListSection.innerHTML = ListSection.innerHTML + KittenThree;
 
+
+// CONDICIONALES
 const input_search_desc = document.querySelector('.js_in_search_desc');
 const descrSearchText = input_search_desc.value;
 
