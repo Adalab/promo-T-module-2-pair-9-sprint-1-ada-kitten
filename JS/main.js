@@ -61,7 +61,7 @@ const KittenThree = renderKitten(
   kittenRaceThree
 );
 
-ListSection.innerHTML = ListSection.innerHTML + kittenOne + kittenTwo + KittenThree;
+//ListSection.innerHTML = ListSection.innerHTML + kittenOne + kittenTwo + KittenThree;
 //ListSection.innerHTML = ListSection.innerHTML + kittenTwo;
 //ListSection.innerHTML = ListSection.innerHTML + KittenThree;
 
@@ -70,8 +70,10 @@ ListSection.innerHTML = ListSection.innerHTML + kittenOne + kittenTwo + KittenTh
 const input_search_desc = document.querySelector('.js_in_search_desc');
 const descrSearchText = input_search_desc.value;
 
+ListSection.innerHTML = '';
+
 if (kittenDescOne.includes(descrSearchText)) {
-  ListSection.innerHTML = kittenOne;
+  ListSection.innerHTML += kittenOne;
 }
 
 if (kittenDescTwo.includes(descrSearchText)) {
@@ -114,6 +116,7 @@ function handleClickNewCatForm(event) {
 //5.funciones
 buttonNewAdd.addEventListener('click', handleClickNewCatForm);
 
+
 // buttonNewAdd.addEventListener("click", (event) => {
 //   handleClickNewCatForm(event);
 //   //showNewCatForm(); //aqui estoy llamando la function dentro del evento
@@ -145,7 +148,8 @@ function handleClickCancel(event) {
 }
 
 buttonCancel.addEventListener('click', handleClickCancel);
-
+/*
 function renderKitten(url, desc, name, race) {
   //completa el código
 }
+*/
