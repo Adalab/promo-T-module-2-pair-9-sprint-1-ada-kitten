@@ -6,7 +6,7 @@ function renderKitten(url, desc, name, race) {
     html = `Uy que despiste, no sabemos su raza`;
   } else {
     html = race;
-  }
+  } 
   const kittenHtml = `<li class="card">
     <article>
       <img class="card_img" src="${url}"/>
