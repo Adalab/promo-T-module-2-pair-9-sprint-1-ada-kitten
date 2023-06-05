@@ -165,3 +165,4 @@ buttonCancel.addEventListener('click', handleClickCancel);
 function renderKitten(url, desc, name, race) {
   //completa el código
 }
+
