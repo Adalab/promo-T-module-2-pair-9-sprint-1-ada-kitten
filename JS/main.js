@@ -10,6 +10,7 @@ const inputRace = document.querySelector('.js-input-race');
 const labelMessageError = document.querySelector('.js-label-error');
 const newForm = document.querySelector('.js-new-form'); //elemto da sextion new-form
 const buttonNewAdd = document.querySelector('.js-add');
+const inputElement = document.querySelector('.js-input');
 
 function renderKitten(url, desc, name, race) {
   let html = '';
@@ -120,6 +121,7 @@ buttonNewAdd.addEventListener('click', handleClickNewCatForm);
 //   //showNewCatForm(); //aqui estoy llamando la function dentro del evento
 //   //newForm.classList.toggle("collapsed"); la funcion que vamos incluir subtitui este evento;
 // });
+const kittenDataList = [];
 
 buttonForm.addEventListener('click', (event) => {
   event.preventDefault();
@@ -132,9 +134,22 @@ buttonForm.addEventListener('click', (event) => {
   if (valueDesc === '' || valuePhoto === '' || valueName === '' || valueRace === '') {
     labelMessageError.innerHTML = '¡Uy! parece que has olvidado algo';
   } else {
-    labelMessageError.innerHTML = '';
+    labelMessageError.innerHTML = 'Bienvenido gatito';
   }
+
+  const newKittenDataObject = {
+    photo : valuePhoto,
+    name: valueName,
+    race: valueRace,
+    desc: valueDesc,
+
+  };
+ 
+  kittenDataList.push(newKittenDataObject);
+  
 });
+
+
 
 function handleClickCancel(event) {
   event.preventDefault();
