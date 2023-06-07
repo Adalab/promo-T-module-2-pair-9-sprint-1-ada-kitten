@@ -11,6 +11,8 @@ const labelMessageError = document.querySelector('.js-label-error');
 const newForm = document.querySelector('.js-new-form'); //elemto da sextion new-form
 const buttonNewAdd = document.querySelector('.js-add');
 const inputElement = document.querySelector('.js-input');
+const ListSection = document.querySelector('.js-list');
+
 
 function renderKitten(url, desc, name, race) {
   let html = '';
@@ -39,8 +41,6 @@ function renderKitten(url, desc, name, race) {
   'raza del gato'
 );
 renderKitten(8, 7, 6, 5);*/
-
-const ListSection = document.querySelector('.js-list');
 
 const kittenImagenOne = 'https://dev.adalab.es/gato-siames.webp';
 const kittenNameOne = 'Anastacio';
@@ -73,9 +73,7 @@ const KittenThree = renderKitten(
   kittenRaceThree
 );
 
-ListSection.innerHTML = ListSection.innerHTML + kittenOne + kittenTwo + KittenThree;
-//ListSection.innerHTML = ListSection.innerHTML + kittenTwo;
-//ListSection.innerHTML = ListSection.innerHTML + KittenThree;
+ListSection.innerHTML += kittenOne + kittenTwo + KittenThree;
 
 
 // CONDICIONALES
@@ -123,20 +121,20 @@ buttonNewAdd.addEventListener('click', handleClickNewCatForm);
 // });
 const kittenDataList = [];
 
+
 buttonForm.addEventListener('click', (event) => {
   event.preventDefault();
-
-  const valueDesc = inputDesc.value;
+ 
   const valuePhoto = inputPhoto.value;
+  const valueDesc = inputDesc.value;
   const valueName = inputName.value;
   const valueRace = inputName.value;
 
   if (valueDesc === '' || valuePhoto === '' || valueName === '' || valueRace === '') {
     labelMessageError.innerHTML = '¡Uy! parece que has olvidado algo';
   } else {
-    labelMessageError.innerHTML = 'Bienvenido gatito';
-  }
-
+    labelMessageError.innerHTML = 'Mola! Un nuevo gatito en Adalab!';
+    
   const newKittenDataObject = {
     photo : valuePhoto,
     name: valueName,
@@ -147,7 +145,12 @@ buttonForm.addEventListener('click', (event) => {
  
   kittenDataList.push(newKittenDataObject);
   
+  const newCat = renderKitten(kittenDataList[0].photo, kittenDataList[0].name, kittenDataList[0].race, kittenDataList[0].desc);
+ 
+  ListSection.innerHTML += newCat;v
+  }
 });
+
 
 
 
@@ -162,7 +165,5 @@ function handleClickCancel(event) {
 
 buttonCancel.addEventListener('click', handleClickCancel);
 
-function renderKitten(url, desc, name, race) {
-  //completa el código
-}
+
 
