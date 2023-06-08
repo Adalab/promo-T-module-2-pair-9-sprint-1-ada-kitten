@@ -1,7 +1,7 @@
 'use strict';
 
 //EVENTOS
-const buttonForm = document.querySelector('.js-btn-add');
+const buttonForm = document.querySelector('.js-btn-add'); //añadir
 const buttonCancel = document.querySelector('.js-btn-cancel');
 const inputDesc = document.querySelector('.js-input-desc');
 const inputPhoto = document.querySelector('.js-input-photo');
@@ -9,7 +9,7 @@ const inputName = document.querySelector('.js-input-name');
 const inputRace = document.querySelector('.js-input-race');
 const labelMessageError = document.querySelector('.js-label-error');
 const newForm = document.querySelector('.js-new-form'); //elemto da sextion new-form
-const buttonNewAdd = document.querySelector('.js-add');
+const buttonNewAdd = document.querySelector('.js-add'); // botón * añadir
 const inputElement = document.querySelector('.js-input');
 
 function renderKitten(url, desc, name, race) {
