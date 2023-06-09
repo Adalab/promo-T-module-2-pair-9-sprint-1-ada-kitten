@@ -12,7 +12,8 @@ const newForm = document.querySelector('.js-new-form'); //elemto da sextion new-
 const buttonNewAdd = document.querySelector('.js-add'); // botón * añadir
 const inputElement = document.querySelector('.js-input');
 const ListSection = document.querySelector('.js-list');
-
+const input_search_race = document.querySelector('.js_in_search_des');
+const btnSearch = document.querySelector('.js_btnSearch');
 
 function renderKitten(url, desc, name, race) {
   let html = '';
@@ -74,7 +75,7 @@ const KittenThree = renderKitten(
 );
 
 ListSection.innerHTML += kittenOne + kittenTwo + KittenThree;
-
+console.log(ListSection);
 
 // CONDICIONALES
 const input_search_desc = document.querySelector('.js_in_search_desc');
@@ -167,3 +168,36 @@ buttonCancel.addEventListener('click', handleClickCancel);
 
 
 
+// Filtrar por descripción
+
+function filterKitten(ev) {
+  //Modifica el código:
+  //Haz un filter sobre el listado de gatitos
+  //Vuelve a pintar el listado de gatitos filtrados en el HTML.
+}
+
+// filtrar por descripción
+
+const allKitten = {
+  kittenOne
+  kittenTwo
+  kittenThree
+  newKittenDataObject
+
+}
+
+function filterKitten(ev) {
+  const descSearchRace = input_search_race.value;
+  descrSearchText
+  //Haz un filter sobre el listado de gatitos
+  //Vuelve a pintar el listado de gatitos filtrados en el HTML.
+}
+
+
+
+function handleClickSearch(event) {
+  event.preventDefault();
+}
+
+//EVENTOS
+btnSearch.addEventListener('click', handleClickSearch);
